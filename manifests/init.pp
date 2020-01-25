@@ -24,6 +24,7 @@ class apache (
         Boolean                     $network_relay,
         Boolean                     $send_mail,
         Boolean                     $use_nfs,
+        Boolean                     $httpd_unified,
     ) {
 
     include 'apache::package'
@@ -78,6 +79,9 @@ class apache (
                 ;
             'httpd_execmem':
                 ensure => $execmem,
+                ;
+            'httpd_unified':
+                ensure => $httpd_unified,
                 ;
             'httpd_use_nfs':
                 ensure => $use_nfs,

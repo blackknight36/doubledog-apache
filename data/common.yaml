@@ -5,6 +5,7 @@
 
 apache::anon_write:                 false
 apache::execmem:                    false
+apache::httpd_unified:              false
 apache::log_level:                  warn
 apache::manage_firewall:            true
 apache::network_connect:            false

@@ -72,6 +72,9 @@ Should SELinux allow httpd to modify public files used for public file transfer 
 ##### `execmem`
 Should SELinux allow httpd scripts and modules execmem/execstack?  Either `true` or `false` (default).
 
+##### `httpd_unified`
+Should SELinux allow httpd scripts and modules execmem/execstack?  Either `true` or `false` (default).
+
 ##### `log_level`
 Limits the level of messages logged to the `error_log` file.  Valid values are regulated by the [Apache::Log\_level](#apachelog_level-data-type).  The default is `'warn'`.
 
